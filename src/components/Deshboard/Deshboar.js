@@ -1,5 +1,4 @@
 import axios from "axios";
-import React, { useContext } from "react";
 import { useEffect, useState } from "react/cjs/react.development";
 import SideNav from "../Sidenav/SideNav";
 
@@ -27,7 +26,7 @@ const Deshboar = ({sendUser}) => {
               orders.length === 0 ? "" : <h1>CUSTOMER ALL ORDERS</h1>
             }
               {
-                orders.length !=0? 
+                orders.length !==0? 
                 <table className="table table-bordered">
                 <thead>
                   <tr>
@@ -39,9 +38,9 @@ const Deshboar = ({sendUser}) => {
                 <tbody>
                   {orders.map((order) => (
                     <tr key={order._key} scope="row">
-                      <td scope="col">{order.sName}</td>
-                      <td scope="col">{order.sPrice}</td>
-                      <td scope="col">{order.sDesc}</td>
+                      <td>{order.sName}</td>
+                      <td>{order.sPrice}</td>
+                      <td>{order.sDesc}</td>
                     </tr>
                   ))}
                 </tbody>

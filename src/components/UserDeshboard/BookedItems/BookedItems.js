@@ -38,10 +38,10 @@ const BookedItems = () => {
                 <tbody>
                   {orders.map((order) => (
                     <tr key={order._key} scope="row">
-                      <td scope="col">{order.sName}</td>
-                      <td scope="col">{order.sPrice}</td>
-                      <td scope="col">{order.sDesc}</td>
-                      <td scope="col" className="text-danger">
+                      <td>{order.sName}</td>
+                      <td>{order.sPrice}</td>
+                      <td>{order.sDesc}</td>
+                      <td className="text-danger">
                         Pending
                       </td>
                     </tr>

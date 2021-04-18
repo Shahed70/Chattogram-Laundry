@@ -3,9 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import AddAdmin from "./components/Deshboard/AddAdmin";
 import AddService from "./components/Deshboard/AddService";
-import Deshboar from "./components/Deshboard/Deshboar";
+//import Deshboar from "./components/Deshboard/Deshboar";
 import ManageService from "./components/Deshboard/ManageService";
-//import PrivateRoute from "./components/PrivateRoute";
 import Home from "./components/home/home/Home";
 import Login from "./components/Login/Login";
 import PrivateRoute from "./components/PrivateRoute";
@@ -15,7 +14,6 @@ import CustomerReview from "./components/UserDeshboard/Reviews/CustomerReview";
 import UserDeshboard from "./components/UserDeshboard/UserDeshboard";
 
 export const CreactUserContext = createContext();
-const user = false;
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
   console.log(loggedInUser);

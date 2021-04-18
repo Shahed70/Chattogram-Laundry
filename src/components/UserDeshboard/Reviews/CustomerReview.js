@@ -5,7 +5,7 @@ import { CreactUserContext } from '../../../App';
 import UserNav from '../UserNav/UserNav';
 
 const CustomerReview = () => {
-  const [loggedInUser, setLoggedInUser] = useContext(CreactUserContext)
+  const [loggedInUser] = useContext(CreactUserContext)
   const [review, setReview] = useState({
     name:"",
     designation:"",

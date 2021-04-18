@@ -10,8 +10,10 @@ const ShareDashBoard = () => {
     return (
         <div>
             {
-                loggedInUser.email === "amaremail234@gmail.com" || "programminghero001@gmail.com" ? <Deshboar sendUser={setUser} />:<UserDeshboard />
+                loggedInUser.email === ("amaremail234@gmail.com" || "programminghero001@gmail.com") ? <Deshboar sendUser={setUser} />:<UserDeshboard />
             }
+            
+            
         </div>
     );
 };

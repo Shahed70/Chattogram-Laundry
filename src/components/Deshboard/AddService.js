@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import SideNav from "../Sidenav/SideNav";
 
 const AddService = () => {
-  const [successOrError, setCuccessOrError] = useState()
   const [services, setServices] = useState({
     sName:"",
     sPrice:"",
