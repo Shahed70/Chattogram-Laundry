@@ -15,8 +15,7 @@ import UserDeshboard from "./components/UserDeshboard/UserDeshboard";
 
 export const CreactUserContext = createContext();
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState({});
-  console.log(loggedInUser);
+  const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <>
       <CreactUserContext.Provider value={[loggedInUser, setLoggedInUser]}>
