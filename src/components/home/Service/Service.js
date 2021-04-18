@@ -1,8 +1,8 @@
 import axios from "axios";
 import React from "react";
 import { useEffect } from "react";
-import { useHistory } from "react-router";
-import { useState } from "react/cjs/react.development";
+import { useHistory } from "react-router-dom";
+import { useState } from "react";
 import "./Service.css";
 
 const Service = () => {

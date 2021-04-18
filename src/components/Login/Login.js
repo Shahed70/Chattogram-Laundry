@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import { CreactUserContext } from "../../App";
 import firebaseConfig from "../../firebse";
-import { useHistory, useLocation } from "react-router";
+import { useHistory, useLocation } from "react-router-dom";
 import "./Login.css";
 import loginSvg from "../../asset/undraw_authentication_fsn5.svg";
 import Navbar from "../home/Navbar/Navbar";

@@ -1,10 +1,11 @@
 import axios from "axios";
 import React from "react";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import './Testimonial.css'
 
 const Testimonial = () => {
   const [reviews, setReview] = useState([])
+  
   useEffect(() => {
     axios.get('http://localhost:4000/getReview')
     .then(res => {

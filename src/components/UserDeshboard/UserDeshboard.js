@@ -4,9 +4,9 @@ import UserNav from "./UserNav/UserNav";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckOutForm from "./CheckOutForm/CheckOutForm";
-import { useEffect, useState } from "react/cjs/react.development";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 const promise = loadStripe(
   "pk_test_51IeK8WC70I0U8TmK9pWmYVaHeYBKkxQKI7o3Asko7qFoSIHr9ZiOoQcEtk8imZTPj6RhqhgJMRtqgAEIlPLE8Q2r00nZ8lq71R"
 );
