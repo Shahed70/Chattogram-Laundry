@@ -10,7 +10,7 @@ const AddService = () => {
   })
  function handleSubmit(e){
     e.preventDefault();
-    axios.post('http://localhost:4000/addService', (services))
+    axios.post('https://serene-coast-10697.herokuapp.com/addService', (services))
       .then(res => console.log(res))
       .catch(err => console.log(err))
       e.target.reset();

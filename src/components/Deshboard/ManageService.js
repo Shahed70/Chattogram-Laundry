@@ -7,14 +7,14 @@ const ManageService = () => {
   const [services, setServices] = useState([])
   useEffect(() => {
     axios
-      .get("http://localhost:4000/getServices")
+      .get("https://serene-coast-10697.herokuapp.com/getServices")
       .then((res) => {
         setServices(res.data);
       })
       .catch((err) => console.log(err));
   }, []);
   const serviceDeleteHandler = (id) =>{
-      axios.post(`http://localhost:4000/delService/${id}`)
+      axios.post(`https://serene-coast-10697.herokuapp.com/delService/${id}`)
         .then(res => {
           console.log(res);
         })

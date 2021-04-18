@@ -7,7 +7,7 @@ const Testimonial = () => {
   const [reviews, setReview] = useState([])
   
   useEffect(() => {
-    axios.get('http://localhost:4000/getReview')
+    axios.get('https://serene-coast-10697.herokuapp.com/getReview')
     .then(res => {
       setReview(res.data)
     }).catch(err => console.log(err))

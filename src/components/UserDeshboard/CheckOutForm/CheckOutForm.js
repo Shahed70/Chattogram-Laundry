@@ -31,7 +31,7 @@ const CheckOutForm = ({bookItem}) => {
       console.log('[PaymentMethod]', paymentMethod);
     }
 
-    axios.post('http://localhost:4000/setBookedInfo',(bookItem))
+    axios.post('https://serene-coast-10697.herokuapp.com/setBookedInfo',(bookItem))
     .then(res => console.log(res))
     .catch(err => console.log(err))
   };

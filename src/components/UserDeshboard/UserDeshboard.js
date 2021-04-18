@@ -16,7 +16,7 @@ const UserDeshboard = () => {
   useEffect(() => {
     if(id){
       axios
-      .get("http://localhost:4000/getServices/" + id)
+      .get("https://serene-coast-10697.herokuapp.com/getServices/" + id)
       .then((res) => {
         setBook(res.data[0]);
       })

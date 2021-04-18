@@ -6,7 +6,7 @@ const Deshboar = ({sendUser}) => {
   const [orders, setOrders] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/getBookedInfo")
+      .get("https://serene-coast-10697.herokuapp.com/getBookedInfo")
       .then((res) => {
         setOrders(res.data);
       })

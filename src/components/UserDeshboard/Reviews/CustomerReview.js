@@ -17,7 +17,7 @@ const CustomerReview = () => {
    newItem.img = loggedInUser.img
    setReview(newItem)
    e.preventDefault()
-   axios.post("http://localhost:4000/setReview/", (review))
+   axios.post("https://serene-coast-10697.herokuapp.com/setReview/", (review))
    .then(res => {
      console.log(res);
    })
