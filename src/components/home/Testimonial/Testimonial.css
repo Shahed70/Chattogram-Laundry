@@ -1,0 +1,8 @@
+.review-card{
+    min-width: 250px;
+}
+@media(min-width:769px) and (max-width:1086){
+    .review-card{
+        height: 420px;
+    }
+}

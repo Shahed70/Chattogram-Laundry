@@ -8,14 +8,17 @@ import ManageService from "./components/Deshboard/ManageService";
 //import PrivateRoute from "./components/PrivateRoute";
 import Home from "./components/home/home/Home";
 import Login from "./components/Login/Login";
+import PrivateRoute from "./components/PrivateRoute";
+import ShareDashBoard from "./components/ShareDashBoard/ShareDashBoard";
 import BookedItems from "./components/UserDeshboard/BookedItems/BookedItems";
 import CustomerReview from "./components/UserDeshboard/Reviews/CustomerReview";
 import UserDeshboard from "./components/UserDeshboard/UserDeshboard";
 
 export const CreactUserContext = createContext();
+const user = false;
 function App() {
   const [loggedInUser, setLoggedInUser] = useState({});
-
+  console.log(loggedInUser);
   return (
     <>
       <CreactUserContext.Provider value={[loggedInUser, setLoggedInUser]}>
@@ -24,35 +27,27 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            {/* <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route> */}
-            {/* <PrivateRoute path="">
-
-          </PrivateRoute> */}
+            <PrivateRoute path="/sharedashboard">
+              <ShareDashBoard />
+            </PrivateRoute>
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/deshboard">
-                <Deshboar />
-            </Route>
             <Route path="/service">
-                <AddService />
+              <AddService />
             </Route>
             <Route path="/addAdmin">
-               <AddAdmin />
+              <AddAdmin />
             </Route>
             <Route path="/manageService">
-                <ManageService />
+              <ManageService />
             </Route>
-            <Route path="/userDeshboard" >
-                  <UserDeshboard/>
-            </Route>
-            <Route path="/book/:id">
-              <BookedItems />
+
+            <PrivateRoute path="/userdeshboard/:id">
+              <UserDeshboard />
+            </PrivateRoute>
+            <Route path="/userdeshboard">
+              <UserDeshboard />
             </Route>
             <Route path="/book">
               <BookedItems />

@@ -1,7 +1,11 @@
-.card{
+.service-card{
     cursor: pointer;
 }
-
+.service-card:hover{
+    background: darkblue;
+    color: #fff;
+    transition: all 1s;
+}
 @media(max-width:992px){
     .services-row{
         padding-top: 70px;

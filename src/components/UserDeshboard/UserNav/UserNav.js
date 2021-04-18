@@ -16,7 +16,7 @@ const UserNav = () => {
             <li className="nav-item pl-3 py-1">
               <div className="d-flex">
               <i className="fas fa-shopping-cart"></i>
-                <Link className="nav-link" to="/userDeshboard">
+                <Link className="nav-link" to="/userdeshboard">
                   Place Order
                 </Link>
               </div>

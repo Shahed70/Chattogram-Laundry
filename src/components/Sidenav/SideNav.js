@@ -16,7 +16,7 @@ const SideNav = () => {
             <li className="nav-item pl-3 py-1">
               <div className="d-flex">
                 <i className="fas fa-bars fas-icon"></i>
-                <Link className="nav-link active" to="/deshboard">
+                <Link className="nav-link active" to="/sharedashboard">
                   Order list
                 </Link>
               </div>
@@ -32,7 +32,7 @@ const SideNav = () => {
             <li className="nav-item pl-3 py-1">
               <div className="d-flex">
                 <i className="fas fa-user-lock fas-icon"></i>
-                <Link className="nav-link" to="addAdmin">
+                <Link className="nav-link" to="/addAdmin">
                   Make admin
                 </Link>
               </div>
@@ -40,7 +40,7 @@ const SideNav = () => {
             <li className="nav-item pl-3 py-1">
               <div className="d-flex">
                 <i className="fas fa-arrows-alt fas-icon"></i>
-                <Link className="nav-link" to="manageService">
+                <Link className="nav-link" to="/manageService">
                   Manage services
                 </Link>
               </div>

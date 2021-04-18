@@ -13,7 +13,7 @@ const Home = () => {
     <div className="container-fluid px-0 mx-0">
       <Navbar />
       <div className="">
-        <div className="row home-hero px-5">
+        <div className="row home-hero px-5 mb-5">
         <div className="overlay"></div>
           <div className="col-md-6">
               <div className="hero-left mt-5 pt-5">

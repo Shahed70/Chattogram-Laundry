@@ -24,9 +24,8 @@ const Login = () => {
       .auth()
       .signInWithPopup(provider)
       .then((result) => {
-        console.log(result.user);
-        const { displayName, email } = result.user;
-        const signedInUser = { name: displayName, email };
+        const { displayName, email, photoURL } = result.user;
+        const signedInUser = { name: displayName, email, img: photoURL };
         setLoggedInUser(signedInUser);
         history.replace(from);
         // ...

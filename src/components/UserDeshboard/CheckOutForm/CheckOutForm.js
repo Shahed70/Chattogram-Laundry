@@ -1,6 +1,6 @@
 import {CardElement, useStripe, useElements} from '@stripe/react-stripe-js';
-
-const CheckOutForm = () => {
+import axios from 'axios';
+const CheckOutForm = ({bookItem}) => {
   const stripe = useStripe();
   const elements = useElements();
 
@@ -30,7 +30,12 @@ const CheckOutForm = () => {
     } else {
       console.log('[PaymentMethod]', paymentMethod);
     }
+
+    axios.post('http://localhost:4000/setBookedInfo',(bookItem))
+    .then(res => console.log(res))
+    .catch(err => console.log(err))
   };
+
 
   return (
     <form onSubmit={handleSubmit}>

@@ -20,15 +20,15 @@ const Service = () => {
     <div className="services">
       <div className="row services-title mx-5">
         <div className="col-md-12 col-sm-12">
-          <h1 className="text-center py-5">What We Are</h1>
+          <h1 className="text-center py-5 mb-4">What We Do For You</h1>
         </div>
       </div>
       <div className="row services-row px-5">
         {services.map((service) => (
-          <div key={service._id} className="col-md-4 mb-3">
+          <div key={service._id} className="col-md-4 mb-5">
             <div
-              onClick={() => history.push(`/book/${service._id}`)}
-              className="card card-body text-center  p-4"
+              onClick={() => history.push(`/userdeshboard/${service._id}`)}
+              className="service-card card card-body text-center  p-4"
             >
               <h1>{service.sName}</h1>
               <p className="lead pt-3">{service.sDesc}</p>

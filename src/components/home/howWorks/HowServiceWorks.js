@@ -5,11 +5,11 @@ const HowServiceWorks = () => {
     <>
       <div className="row">
         <div className="col-md-12 text-center">
-          <h1 className="py-5">How Our Service Works</h1>
+          <h1 className="py-5 my-5">How Our Service Works</h1>
         </div>
       </div>
       <div className="row px-5">
-        <div className="col-md-3 pb-5">
+        <div className="col-md-3 mb-3 pb-5">
           <div className="icon-box text-center ">
             <i className="fas fa-mobile-alt fa-5x"></i>
             <h4 className="mt-3">Sign Up</h4>
@@ -20,7 +20,7 @@ const HowServiceWorks = () => {
             information.
           </p>
         </div>
-        <div className="col-md-3 pb-5">
+        <div className="col-md-3 mb-3 pb-5">
           <div className="icon-box text-center ">
             <i className="fas fa-people-carry fa-5x"></i>
             <h4 className="mt-3">Pick Up</h4>
@@ -31,7 +31,7 @@ const HowServiceWorks = () => {
             for a pick-up.
           </p>
         </div>
-        <div className="col-md-3 pb-5">
+        <div className="col-md-3 mb-3 pb-5">
           <div className="icon-box text-center">
             <i className="fas fa-hands-wash fa-5x"></i>
             <h4 className="mt-3">Cleaning</h4>
@@ -42,7 +42,7 @@ const HowServiceWorks = () => {
             care.
           </p>
         </div>
-        <div className="col-md-3 pb-1">
+        <div className="col-md-3 mb-3 pb-1">
           <div className="icon-box text-center ">
             <i className="fas fa-tshirt fa-5x"></i>
             <h4 className="mt-3">Delivery</h4>

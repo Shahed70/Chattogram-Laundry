@@ -38,8 +38,8 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#">
-              ADMIN
+              <Link className="nav-link" to="/sharedashboard">
+              DASHBOARD
               </Link>
             </li>
             <li className="nav-item">

@@ -4,10 +4,28 @@ import UserNav from "./UserNav/UserNav";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import CheckOutForm from "./CheckOutForm/CheckOutForm";
+import { useEffect, useState } from "react/cjs/react.development";
+import axios from "axios";
+import { useParams } from "react-router";
 const promise = loadStripe(
   "pk_test_51IeK8WC70I0U8TmK9pWmYVaHeYBKkxQKI7o3Asko7qFoSIHr9ZiOoQcEtk8imZTPj6RhqhgJMRtqgAEIlPLE8Q2r00nZ8lq71R"
 );
 const UserDeshboard = () => {
+  const [book, setBook] = useState({})
+  const { id } = useParams();
+  useEffect(() => {
+    if(id){
+      axios
+      .get("http://localhost:4000/getServices/" + id)
+      .then((res) => {
+        setBook(res.data[0]);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
+  }, [id]);
+
   return (
     <div className="container-fluid px-0 overflow-hidden">
       <div className="row">
@@ -19,21 +37,16 @@ const UserDeshboard = () => {
           <h1>MAKE PAYMENT</h1>
           <form action="" className="mt-3">
             <div className="form-group">
-              <label htmlFor="">Name</label>
-              <input type="text" className="form-control" />
+              <label htmlFor="">Service Name</label>
+              <input type="text" className="form-control" value={book.sName} />
             </div>
             <div className="form-group">
-              <label htmlFor="">Email</label>
-              <input type="email" className="form-control" />
+              <label htmlFor="">Service Price</label>
+              <input type="text" className="form-control" value={book.sPrice} />
             </div>
-            <div className="form-group">
-              <label htmlFor="">Service</label>
-              <input type="text" className="form-control" />
-            </div>
-            <div></div>
           </form>
           <Elements stripe={promise}>
-            <CheckOutForm />
+            <CheckOutForm bookItem={book} />
           </Elements>
         </div>
       </div>

@@ -2,8 +2,9 @@ import React from "react";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div className="pt-5">
-      <div className="row px-5 mt-5">
+    <div className="">
+      <hr/>
+      <div className="row px-5 bg-dark text-light py-5">
         <div className="col-md-3 text-center">
           <h3 className="text-center">Chattogram </h3>
           <p className="text-secondry">Laundry</p>
@@ -43,27 +44,21 @@ const Footer = () => {
           <h3>Services</h3>
           <hr />
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Dry Clean Your Winter Coat
           </p>
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Dry Clean
           </p>
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Ironing Service
           </p>
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Laundry
           </p>
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Wash and Fold
           </p>
           <p>
-            {" "}
             <i className="fa fa-arrow-right"></i> Laundry Chattogram
           </p>
         </div>
@@ -93,8 +88,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-dark text-light text-center mt-5">
-        <p className="py-4">Copyright {new Date().getFullYear()} All Rights Reserved</p>
+      <div className="bg-dark text-light text-center">
+        <p className="py-4">
+          Copyright {new Date().getFullYear()} All Rights Reserved
+        </p>
       </div>
     </div>
   );
