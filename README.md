@@ -1,10 +1,10 @@
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-#A brief introduction on this this project;
+# A brief introduction on this this project;
 
-This is a simple project of online laundry service. There are some interesting one click services under this project. 
+This is a project of online laundry service. There are some interesting one click services under this project. 
 
-Home page: Home page has 7 different section including a big footer section
+### Home page: Home page has 7 different section including a big footer section
 
 *Top banner with a project related video
 *Services section
@@ -17,7 +17,7 @@ Home page: Home page has 7 different section including a big footer section
 
 Services are
 
-All service data and review data are loaded from mongo DB server
+## All service data and review data are loaded from mongo DB server
 -------------
 1.Dry Cleaning
 2.Wet Cleaning
