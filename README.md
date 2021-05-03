@@ -17,7 +17,7 @@ Home page: Home page has 7 different section including a big footer section
 
 Services are
 
-All service data review data are loaded from mongo DB server
+All service data and review data are loaded from mongo DB server
 -------------
 1.Dry Cleaning
 2.Wet Cleaning
