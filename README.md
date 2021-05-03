@@ -13,19 +13,17 @@ This is a project of online laundry service. There are some interesting one clic
 *Customer review section \
 *Contact form section \
 *Big footer section \
-*Simple copyright section 
+*professional copyright section 
 
-# Services are
 
 ## All service data and review data are loaded from mongo DB server
------------------------------------------------------------------- \
 1.Dry Cleaning \
 2.Wet Cleaning \
 3.Leather Cleaning
 
 ### Protective route : There are separate login system for user and admin
 
-### Dashboard: Separate Dashboard for user and admin
+# Dashboard: Separate Dashboard for user and admin
 
 ### Admin dashboard has four options for admin
 1.Order list \
